@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXTRY - Probador Virtual</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url('https://images.unsplash.com/photo-1602810319225-0da2ac7f3dc4') no-repeat center center;
+      background-size: cover;
+      height: 70vh;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    .btn {
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .features img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .features div {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>NEXTRY</h1>
+    <p>Probador Virtual de Ropa con Realidad Aumentada</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre Nextry</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>¡Prueba tu ropa favorita sin salir de casa!</h1>
+    <p>Explora el futuro de la moda digital con Nextry</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>¿Qué es Nextry?</h2>
+    <p>
+      Nextry es una plataforma digital que ofrece probadores de ropa virtuales usando inteligencia artificial y realidad aumentada. Está diseñada para tiendas y marcas de ropa que quieren ofrecer una experiencia más moderna y eficiente a sus clientes.
+    </p>
+  </section>
+
+  <section id="funciones" class="section">
+    <h2>Funciones de Nextry</h2>
+    <div class="features">
+      <div>
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" alt="Avatar personalizado">
+        <h4>Avatares Personalizados</h4>
+        <p>Visualiza prendas en un modelo que se parece a ti.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1603252109303-2751441df2cf" alt="Interfaz fácil">
+        <h4>Interfaz Intuitiva</h4>
+        <p>Fácil de usar, desde cualquier dispositivo.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1581291519195-ef11498d1cf5" alt="Realidad aumentada">
+        <h4>Realidad Aumentada</h4>
+        <p>Prueba la ropa con tecnología avanzada en tiempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1602296726869-47f0e3a4c164" alt="Usuario usando Nextry">
+      <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" alt="Probador digital">
+      <img src="https://images.unsplash.com/photo-1618354691373-d6dddb60aeb7" alt="Tienda digital con Nextry">
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <p>¿Quieres integrar Nextry en tu tienda o probar la plataforma?</p>
+    <p>📩 Correo: contacto@nextry.com</p>
+    <p>📱 WhatsApp: +52 984 520 3596</p>
+    <a class="btn" href="mailto:contacto@nextry.com">Enviar Correo</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Nextry. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
